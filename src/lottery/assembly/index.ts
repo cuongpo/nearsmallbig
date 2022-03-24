@@ -21,7 +21,7 @@ export class Contract {
   private active: bool = true;
   private pot: u128 = ONE_NEAR;
   private min_amount: u128 = ONE_NEAR;
-  private max_amount: u128 = u128.mul(u128.from(100),ONE_NEAR));
+  private max_amount: u128 = u128.mul(u128.from(100),ONE_NEAR);
   private lottery: Lottery = new Lottery();
   private players: PersistentSet<AccountId> = new PersistentSet<AccountId>("p");
   private map: PersistentMap<AccountId,u128> = new PersistentMap<AccountId,u128>("m");
